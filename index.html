@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <script
+      src="https://kit.fontawesome.com/c8f9420bc7.js"
+      crossorigin="anonymous"
+    ></script>
+    <link rel="stylesheet" href="styles/style.css" />
+    <title>Mi Curriculo</title>
+  </head>
+  <body>
+    <main class="principal">
+      <header class="header">
+        <div class="img">
+          <img
+            src="/assets/images/fotoUser.png"
+            alt="foto del titular del currículo"
+          />
+        </div>
+        <div>
+          <h1 class="titulo">
+            <span class="nombre">Jorge Ernesto </span>
+            <span class="apellido">Catanzaro</span>
+          </h1>
+        </div>
+      </header>
+      <nav class="navbar">
+        <button type="button" onclick="abre()" id="open" class="open">
+          <img
+            class="opened"
+            src="/assets/icons/barras.png"
+            alt="icono apertura de navbar lateral"
+          />
+        </button>
+        <button type="button" onclick="cierra()" id="close" class="close">
+          <img
+            class="closed"
+            src="/assets/icons/cierre.png"
+            alt="icono de cierre de menu lateral"
+          />
+        </button>
+        <div id="buttons" class="butons">
+          <button type="menu" id="init" class="btn btn1" onclick="mostrar1()">
+            Presentación
+          </button>
+          <button type="menu" id="edu" class="btn btn2" onclick="mostrar2()">
+            Educación
+          </button>
+          <button type="menu" id="ref" class="btn btn3" onclick="mostrar3()">
+            Referencias
+          </button>
+          <button type="menu" id="exp" class="btn btn4" onclick="mostrar4()">
+            Experiencia
+          </button>
+          <button type="menu" id="hab" class="btn btn5" onclick="mostrar5()">
+            Habilidades
+          </button>
+          <button type="menu" id="cont" class="btn btn6" onclick="mostrar6()">
+            Contacto
+          </button>
+        </div>
+      </nav>
+
+      <article id="presentacion" class="presentacion">
+        <h2>Presentación</h2>
+      </article>
+      <article id="educacion" class="educacion">
+        <h2>Educación</h2>
+      </article>
+      <article id="referencias" class="referencias">
+        <h2>Referencias</h2>
+      </article>
+      <article id="experiencia" class="experiencia">
+        <h2>Experiencia</h2>
+      </article>
+      <article id="habilidad" class="habilidad">
+        <h2>Habilidades</h2>
+      </article>
+      <article id="contacto" class="contacto">
+        <h2>contacto</h2>
+      </article>
+    </main>
+  </body>
+  <script src="scripts/script.js"></script>
+</html>
