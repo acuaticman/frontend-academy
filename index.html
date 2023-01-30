@@ -22,66 +22,65 @@
         </div>
         <div>
           <h1 class="titulo">
-            <span class="nombre">Jorge Ernesto </span>
-            <span class="apellido">Catanzaro</span>
+            <span class="nombre">Byron Adams</span>
+            <span class="apellido">Peterson</span>
           </h1>
         </div>
       </header>
       <nav class="navbar">
         <button type="button" onclick="abre()" id="open" class="open">
-          <img
-            class="opened"
-            src="/assets/icons/barras.png"
+          <img class="opened" src="/assets/icons/barras.png"
             alt="icono apertura de navbar lateral"
           />
         </button>
         <button type="button" onclick="cierra()" id="close" class="close">
-          <img
-            class="closed"
-            src="/assets/icons/cierre.png"
-            alt="icono de cierre de menu lateral"
-          />
+          <img class="closed" src="/assets/icons/cierre.png"  alt="icono de cierre de menu lateral"/>
         </button>
-        <div id="buttons" class="butons">
-          <button type="menu" id="init" class="btn btn1" onclick="mostrar1()">
-            Presentación
-          </button>
-          <button type="menu" id="edu" class="btn btn2" onclick="mostrar2()">
-            Educación
-          </button>
-          <button type="menu" id="ref" class="btn btn3" onclick="mostrar3()">
-            Referencias
-          </button>
-          <button type="menu" id="exp" class="btn btn4" onclick="mostrar4()">
-            Experiencia
-          </button>
-          <button type="menu" id="hab" class="btn btn5" onclick="mostrar5()">
-            Habilidades
-          </button>
-          <button type="menu" id="cont" class="btn btn6" onclick="mostrar6()">
-            Contacto
-          </button>
-        </div>
-      </nav>
 
-      <article id="presentacion" class="presentacion">
-        <h2>Presentación</h2>
+<!-- ++ inicia menu con lista no ordenada -->
+
+        <div id="buttons" class="butons">
+          <ul class="unli">
+            <li class="lista"><a class="btn btn1" href="#presentación">Presentación</a></li>
+            <li class="lista"><a class="btn btn2" href="#educacion">Educación</a></li>
+            <li class="lista"><a class="btn btn3" href="#referencias">Referencias</a></li>
+            <li class="lista"><a class="btn btn4" href="#experiencia">Experiencia</a></li>
+            <li class="lista"><a class="btn btn5" href="#habilidad">Habilidades</a></li>
+            <li class="lista"><a class="btn btn6" href="#contacto">Contacto</a></li>
+        </div>
+
+
+      <!-- </nav>
+      <a name="presentacion">
+        <article id="presentacion" class="presentacion">
+          <h2>Presentación</h2>
       </article>
+      </a>
+      <a name="educacion">
       <article id="educacion" class="educacion">
         <h2>Educación</h2>
       </article>
+    </a>
+  <a name="referencias">
       <article id="referencias" class="referencias">
         <h2>Referencias</h2>
       </article>
+      </a>
+      <a name="experiencia">
       <article id="experiencia" class="experiencia">
         <h2>Experiencia</h2>
       </article>
+      </a>
+      <a name="habilidad">
       <article id="habilidad" class="habilidad">
         <h2>Habilidades</h2>
       </article>
+      </a>
+      <a name="contacto">
       <article id="contacto" class="contacto">
         <h2>contacto</h2>
       </article>
+      </a>       -->
     </main>
   </body>
   <script src="scripts/script.js"></script>
