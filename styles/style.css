@@ -36,54 +36,52 @@ body {
   justify-content: center;
   overflow-x: hidden;
   position: absolute;
-  width: 99vw;
-  height: 99vh;
+  width: 100vw;
+  height: 100vh;
   font-family: 'Ubuntu', sans-serif;
   font-size: 16px;
 }
 
-
-
-.principal {
-  background: transparent;
+  .principal {
+ /* background: transparent; */
   display: flex;
-  align-items: center;
-  justify-content: center;
   width: 100vw;
   height: 100vh;
-  padding: 5%;
   z-index: -100;
 }
 
-header {
-  position: fixed;
+.header {
+  position: absolute;
   display: flex;
-  justify-content: flex-start;
+  justify-content: left;
   top: 0;
   left: 0;
   width: 100vw;
   height: 150px;
-  background: var(--blk);
+  /* background: var(--blk); */
   z-index: 1;
 }
 
 img {
   filter: drop-shadow(2px 5px 10px rgba(56, 55, 55, 0.7));
   position: relative;
-  left: 5px;
+  top: 2px;
+  left: 3px;
   display: flex;
   justify-content: center;
   align-items: center;
-  width: 126px;
-  height: 126px;
+  width: 115px;
+  height: 115px;
   border-radius: 20%;
 }
 
 .img {
-  top: 0;
-  left: 0;
-  width: 130px;
-  height: 130px;
+  border: 3px solid rgb(221, 218, 218);
+  position: relative;
+  top: 5px;
+  left: 5px;
+  width: 127px;
+  height: 125px;
   background: rgb(224, 231, 231);
   display: flex;
   justify-content: center;
@@ -97,11 +95,10 @@ img {
 
 .titulo {
   position: relative;
+  top: 5px;
   left: 10px;
-  display: flex;
-  justify-content: left;
-  width: 100vw;
-  height: 80px;
+  display: block;
+  justify-content: left;  
   font-family: 'Cherry Cream Soda', cursive;
   color: white;
   text-shadow: var(--wht) 6px 6px 8px;
@@ -128,101 +125,59 @@ img {
 }
 
 .navbar {
-  position: absolute;
-  top: 80px;
-  left: 0;
-  display: flex;
-  align-items: center;
-  justify-content: flex-end;
-  width: 99vw;
-  height: 45px;
-  padding-right: 10px;
-  max-width: 800px;
-}
-
-.unli {
+  border: 3px solid red;
   position: relative;
+  top: 100px;
   display: flex;
+  justify-content: flex-end;
+  width: 100%;
+  max-width: 800px;
+  height: 50px;
+  padding-right: 5px;
+  margin: 0 auto;
+}
+.butons {
+  border: 3px solid green;
+  display: flex;
+  flex-direction: row;  
   align-items: center;
   justify-content: flex-end;
-  width: 99vw;
   height: 45px;
-  padding-right: 10px;
-  max-width: 800px;
+  padding-right: 5px;
+  margin: 0 auto;
 }
 
-.lista{
-  list-style: none;
-}
 
-a.btn {
+button.btn {
   border-radius: 15px;
   border: 2px solid  #f37e11d5;
   position: relative;
   display: flex;
+  flex-direction: row;
   align-items: center;
   justify-content: center;
   font-family: 'Stick No Bills', sans-serif;
   font-weight: 800;
   font-size: .8em;
-  text-decoration: none;
   color: rgb(8, 8, 8);
   width: 78px;
   height: 35px;
   background: linear-gradient(yellow, red);
   cursor: pointer;
-  transition: all .2s ease-in;
+  transition: all .2s ease-in;  
   z-index: 1;
 }
 
-a.btn:hover {
+.btn:hover {
   transform: scale(1.4);
   font-size: 0.9em;
 }
 
-.open {
-  display: none;
-}
 
-.close {
-  display: none;
-}
-/* 
-article
-h2 {
-  font-family: 'Ubuntu', sans-serif;
-  color: #000;
-  font-size: 1.2em;
-  font-style: italic;
-  text-align: center;
-}
-
-.presentacion, 
-.educacion,
-.referencias,
-.experiencia,
-.habilidad,
-.contacto {
-  position: absolute;
-  top: 145px;
-  left: 0;
-  margin-left: 1%;
-  margin-right: 1%;
-  background: linear-gradient(rgb(151, 32, 32), rgb(244, 247, 114));
-  font-family: 'Ubuntu', sans-serif;
-  color: #000;
-  width: 100vw;
-  max-width: 800px;
-  height: 100vh;
-  box-shadow: 0 0 1px #000;
-  padding: 1rem;
-  transition: 0.2s all linear;
-}
- */
 
 /* ++inician mediaqueris */
 /* ++ -------------------------------------------------------------------------------*/
-
+/*
 @media (min-width: 800px){
 .navbar{
   position: absolute;
@@ -233,9 +188,9 @@ h2 {
   justify-content: center;
 }
 }
-
+*/
 /* ++inicia media*/
-
+/*
 @media (max-width: 510px) {
   .principal {
     width: 100vw;
@@ -369,10 +324,11 @@ h2 {
     cursor: pointer;
   }
 }
-
+*/
 
 /*++ Estilos de práctica con los botones del menú */
 
+/*
 #boton {
   padding: 10px;
   background: rgb(137, 236, 118);
@@ -388,8 +344,6 @@ h2 {
   opacity: .8;
 }
 
-
-
 #caja {
   width: 100%;
   margin: auto;
@@ -399,4 +353,111 @@ h2 {
   box-shadow: 10px 10px 3px #D8D8D8;
   transition: all .3s;
   color: white;
+}
+*/
+
+/* check -------------------- codigo a verificar ------------------ */
+
+/* * Estilos de lista eliminada */
+
+/* 
+.unli {
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+  width: 99vw;
+  height: 45px;
+  padding-right: 10px;
+  max-width: 800px;
+}
+
+.lista{
+  list-style: none;
+}
+ */
+
+ /* ++ estilos de botones de menu mobile */
+
+/* 
+.open {
+  display: none;
+}
+
+.close {
+  display: none;
+}
+
+/* ++ estilos de los article eliminados */
+
+/*
+h2 {
+  font-family: 'Ubuntu', sans-serif;
+  color: #000;
+  font-size: 1.2em;
+  font-style: italic;
+  text-align: center;
+}
+
+.presentacion, 
+.educacion,
+.referencias,
+.experiencia,
+.habilidad,
+.contacto {
+  position: absolute;
+  top: 145px;
+  left: 0;
+  margin-left: 1%;
+  margin-right: 1%;
+  background: linear-gradient(rgb(151, 32, 32), rgb(244, 247, 114));
+  font-family: 'Ubuntu', sans-serif;
+  color: #000;
+  width: 100vw;
+  max-width: 800px;
+  height: 100vh;
+  box-shadow: 0 0 1px #000;
+  padding: 1rem;
+  transition: 0.2s all linear;
+}
+ */
+
+/*  
+  button {
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 40px;
+    height: 20px;
+}
+
+*/
+.note {
+    display: none;
+    position: absolute;
+    align-items: center;
+    justify-content: center;
+    width: 300px;
+    height: 300px;
+    background-color: aquamarine;
+}
+.init {
+    display: block;
+    position: relative;
+    top: 200px;
+    margin: 0 auto;
+    padding: 0 30%; /*buscar forma de centrar el contenido sin display flex*/
+    max-width: 800px;
+    max-height: 80%;
+    background-color: aquamarine;
+} 
+
+.contenedor {
+  border: 2px solid black;
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
 }

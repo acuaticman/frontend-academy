@@ -28,6 +28,34 @@
         </div>
       </header>
       <nav class="navbar">
+        <div id="buttons" class="butons">
+          <button class="btn" id="btn1" onclick="showA()">presentacion</button>
+          <button class="btn" id="btn2" onclick="showB()">Educación</button>
+          <button class="btn" id="btn3" onclick="showC()">Referencias</button>
+          <button class="btn" id="btn4" onclick="showD()">Experiencia</button>
+          <button class="btn" id="btn5" onclick="showE()">Habilidades</button>
+          <button class="btn" id="btn6" onclick="showF()">Contacto</button>
+        </div>
+      </nav>
+      <div class="contenedor">
+        <div class="note" id="a"><h2>Yo soy el div Presentación</h2></div>
+        <div class="note" id="b"><h2>Yo soy el div Educación</h2></div>
+        <div class="note" id="c"><h2>Yo soy el div Referencias</h2></div>
+        <div class="note" id="d"><h2>Yo soy el div Experiencia</h2></div>
+        <div class="note" id="e"><h2>Yo soy el div Habilidades</h2></div>
+        <div class="note" id="f"><h2>Yo soy el div Contacto</h2></div>
+        <div class="init" id="i"><h2>Yo soy el div Inicial</h2></div>
+      </div>
+    </main>
+  </body>
+  <script src="scripts/script.js"></script>
+</html>
+
+<!-- ++   ------------------- CÓDIGO PROVISORIO ---------------------------------- -->
+
+<!-- * --------------- Botones abrir cerrar menu mobile -------------------------- -->
+
+<!--         
         <button type="button" onclick="abre()" id="open" class="open">
           <img class="opened" src="/assets/icons/barras.png"
             alt="icono apertura de navbar lateral"
@@ -35,22 +63,10 @@
         </button>
         <button type="button" onclick="cierra()" id="close" class="close">
           <img class="closed" src="/assets/icons/cierre.png"  alt="icono de cierre de menu lateral"/>
-        </button>
+        </button> -->
 
-<!-- ++ inicia menu con lista no ordenada -->
-
-        <div id="buttons" class="butons">
-          <ul class="unli">
-            <li class="lista"><a class="btn btn1" href="#presentación">Presentación</a></li>
-            <li class="lista"><a class="btn btn2" href="#educacion">Educación</a></li>
-            <li class="lista"><a class="btn btn3" href="#referencias">Referencias</a></li>
-            <li class="lista"><a class="btn btn4" href="#experiencia">Experiencia</a></li>
-            <li class="lista"><a class="btn btn5" href="#habilidad">Habilidades</a></li>
-            <li class="lista"><a class="btn btn6" href="#contacto">Contacto</a></li>
-        </div>
-
-
-      <!-- </nav>
+<!-- ** ----------------- Div's cuerpo de página ------------------------------- -->
+<!-- 
       <a name="presentacion">
         <article id="presentacion" class="presentacion">
           <h2>Presentación</h2>
@@ -81,7 +97,3 @@
         <h2>contacto</h2>
       </article>
       </a>       -->
-    </main>
-  </body>
-  <script src="scripts/script.js"></script>
-</html>
