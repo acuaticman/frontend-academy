@@ -3,6 +3,73 @@
 // Métodos JS para mostrar ocultar div
 
 
+function showA () {
+
+  document.getElementById("a").style.display="block"
+  document.getElementById("b").style.display="none"
+  document.getElementById("c").style.display="none"
+  document.getElementById("d").style.display="none"
+  document.getElementById("e").style.display="none"
+  document.getElementById("f").style.display="none"
+  document.getElementById("i").style.display="none"
+  }
+  
+  function showB () {
+  
+    document.getElementById("a").style.display="none"
+    document.getElementById("b").style.display="block"
+    document.getElementById("c").style.display="none"
+    document.getElementById("d").style.display="none"
+    document.getElementById("e").style.display="none"
+    document.getElementById("f").style.display="none"
+    document.getElementById("i").style.display="none"
+  }
+  
+  function showC () {
+  
+    document.getElementById("a").style.display="none"
+    document.getElementById("b").style.display="none"
+    document.getElementById("c").style.display="block"
+    document.getElementById("d").style.display="none"
+    document.getElementById("e").style.display="none"
+    document.getElementById("f").style.display="none"
+    document.getElementById("i").style.display="none"
+  }
+
+  function showD () {
+
+    document.getElementById("a").style.display="none"
+  document.getElementById("b").style.display="none"
+  document.getElementById("c").style.display="none"
+  document.getElementById("d").style.display="block"
+  document.getElementById("e").style.display="none"
+  document.getElementById("f").style.display="none" 
+  document.getElementById("i").style.display="none"
+    }
+
+  function showE () {
+
+    document.getElementById("a").style.display="none"
+  document.getElementById("b").style.display="none"
+  document.getElementById("c").style.display="none"
+  document.getElementById("d").style.display="none"
+  document.getElementById("e").style.display="block"
+  document.getElementById("f").style.display="none"
+  document.getElementById("i").style.display="none"
+    }
+
+  function showF () {
+
+    document.getElementById("a").style.display="none"
+  document.getElementById("b").style.display="none"
+  document.getElementById("c").style.display="none"
+  document.getElementById("d").style.display="none"
+  document.getElementById("e").style.display="none"
+  document.getElementById("f").style.display="block"
+  document.getElementById("i").style.display="none"
+    }
+
+
 //Metodo Nº 1
 /* 
 var clic = 1;
@@ -96,69 +163,3 @@ function mostrar6() {
 */
 
 //Método Nº 3 
-
-function showA () {
-
-  document.getElementById("a").style.display="block"
-  document.getElementById("b").style.display="none"
-  document.getElementById("c").style.display="none"
-  document.getElementById("d").style.display="none"
-  document.getElementById("e").style.display="none"
-  document.getElementById("f").style.display="none"
-  document.getElementById("i").style.display="none"
-  }
-  
-  function showB () {
-  
-    document.getElementById("a").style.display="none"
-    document.getElementById("b").style.display="block"
-    document.getElementById("c").style.display="none"
-    document.getElementById("d").style.display="none"
-    document.getElementById("e").style.display="none"
-    document.getElementById("f").style.display="none"
-    document.getElementById("i").style.display="none"
-  }
-  
-  function showC () {
-  
-    document.getElementById("a").style.display="none"
-    document.getElementById("b").style.display="none"
-    document.getElementById("c").style.display="block"
-    document.getElementById("d").style.display="none"
-    document.getElementById("e").style.display="none"
-    document.getElementById("f").style.display="none"
-    document.getElementById("i").style.display="none"
-  }
-
-  function showD () {
-
-    document.getElementById("a").style.display="none"
-  document.getElementById("b").style.display="none"
-  document.getElementById("c").style.display="none"
-  document.getElementById("d").style.display="block"
-  document.getElementById("e").style.display="none"
-  document.getElementById("f").style.display="none" 
-  document.getElementById("i").style.display="none"
-    }
-
-  function showE () {
-
-    document.getElementById("a").style.display="none"
-  document.getElementById("b").style.display="none"
-  document.getElementById("c").style.display="none"
-  document.getElementById("d").style.display="none"
-  document.getElementById("e").style.display="block"
-  document.getElementById("f").style.display="none"
-  document.getElementById("i").style.display="none"
-    }
-
-  function showF () {
-
-    document.getElementById("a").style.display="none"
-  document.getElementById("b").style.display="none"
-  document.getElementById("c").style.display="none"
-  document.getElementById("d").style.display="none"
-  document.getElementById("e").style.display="none"
-  document.getElementById("f").style.display="block"
-  document.getElementById("i").style.display="none"
-    }

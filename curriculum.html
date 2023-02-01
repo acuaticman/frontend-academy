@@ -1,32 +1,52 @@
 <!DOCTYPE html>
 <html lang="es">
 
-<head>
-    <meta charset="UTF-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="stylesheet" href="/styles/styleprovis.css" />
-    <title>Curriculum</title>
-</head>
+    <head>
+        <meta charset="UTF-8" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <link rel="stylesheet" href="/styles/styleprovis.css" />
+        <title>Curriculum</title>
+    </head>
 
-<body>
-    <header>
-        <button onclick="showA()">a</button>
-        <button onclick="showB()">b</button>
-        <button onclick="showC()">c</button>
-        <button onclick="showD()">d</button>
-        <button onclick="showE()">e</button>
-        <button onclick="showF()">f</button>
-    </header>
-    
-    <div class="note" id="a">a</div>
-    <div class="note" id="b">b</div>
-    <div class="note" id="c">c</div>    
-    <div class="note" id="d">d</div>
-    <div class="note" id="e">e</div>
-    <div class="note" id="f">f</div>
-    <div class="ini" id="i">ini</div>
-</body>
-<script src="/scripts/script.js"></script>
+    <body>
+        <header class="head">
+            <div class="image">
+                <img src="/assets/images/fotoUser.png" alt="foto del titular">
+            </div>
+            <div class="botonera">
+                <button class="btn" onclick="showA()">Presentación</button>
+                <button class="btn" onclick="showB()">Educación</button>
+                <button class="btn" onclick="showC()">Referencias</button>
+                <button class="btn" onclick="showD()">Experiencia</button>
+                <button class="btn" onclick="showE()">Habilidades</button>
+                <button class="btn" onclick="showF()">Contacto</button>
+            </div>
+        </header>
+        <main class="principal">
+            <div class="note" id="a">
+                <h2>Presentación</h2>
+            </div>
+            <div class="note" id="b">
+                <h2>Mi Educación</h2>
+            </div>
+            <div class="note" id="c">
+                <h2>Mis Referencias</h2>
+            </div>
+            <div class="note" id="d">
+                <h2>Mi Experiencia</h2>
+            </div>
+            <div class="note" id="e">
+                <h2>Mis Habilidades</h2>
+            </div>
+            <div class="note" id="f">
+                <h2>Contacto</h2>
+            </div>
+            <div class="ini" id="i">
+                <h2>Bienvenidos</h2>
+            </div>
+        </main>
+    </body>
 
+    <script src="/scripts/script.js"></script>
 </html>
