@@ -44,6 +44,7 @@ body {
     height: 100vh;
     font-family: 'Ubuntu', sans-serif;
     font-size: 16px;
+    z-index: -100;
 }
 
 .head {
@@ -120,6 +121,8 @@ img {
     letter-spacing: 2px;
 }
 
+/* ++ Botonera superior */
+
 .botonera {
     /* border: 1px solid white; */
     position: relative;
@@ -161,6 +164,50 @@ img {
         0 0 200px #03e9f4;
     z-index: 10;
 }
+/* ++ Botonera inferior */
+
+.btn-imag{
+    border: 1px solid #000;
+    border-radius: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 60px;
+    height: 60px;
+    color: #03e9f4;
+    background: #111;
+    margin: 2px 10px;
+    transition: all .1s ease-in;
+}
+
+.btn-imag:hover{
+    transform: scale(1.2);
+    box-shadow: 0 0 5px #03e9f4,
+    0 0 25px #03e9f4,
+    0 0 50px #03e9f4,
+    0 0 200px #03e9f4;
+    background: #03e9f4;
+    color: #111;
+    text-shadow: 3px 3px 5px #111;
+}
+
+/* * repetir para cada uno de los íconos segun su fa- */
+
+.btn-imag .fa-trophy:hover::after{
+    content: "Pasatiempos";
+    border: 1px solid red;
+    position: absolute;
+    top: 50px;
+    left: 0;
+    display: flex;
+    justify-content: center;
+    background: white;
+    width: 60px;
+    height: 20px;
+    font-size: .3em;
+}
+
+/* ++ fin botonera inferior */
 
 .principal {
     background: rgb(25, 20, 66);
@@ -174,13 +221,15 @@ img {
     z-index: -100;
 }
 
+
+
 .ini {
     display: block;
     position: relative;
     width: 98vw;
     max-width: 800px;
-    height: 80vh;
-    background-color: rgb(68, 80, 119);
+    height: 75vh;
+    background-color: rgb(64, 26, 87);
     color: #fff;
 }
 
@@ -189,9 +238,17 @@ img {
     position: relative;
     width: 98vw;
     max-width: 800px;
-    height: 80vh;
+    height: 75vh;
     background-color: rgb(68, 80, 119);
     color: #fff;
+}
+
+.cerrar{
+    border: 1px solid red;
+    position: absolute;
+    right: 10px;
+    font-size: 2em;
+    font-weight: 800;
 }
 
 
@@ -216,7 +273,8 @@ ul {
 }
 
 li {
-    font-family: 'Ubuntu Mono', monospace;    
+    font-family: 'Ubuntu Mono', monospace;
+    font-size: 1.5em;    
     margin: 20px 0 20px 100px;
 }
 
@@ -225,23 +283,17 @@ li {
     display: flex;
     align-items: center;
     justify-content: center;
+    width: 100%;
+    position: absolute;
+    bottom: 115px;
 }
 
 .fas{
-    font-size: 4em;
+    font-size: 2em;
     margin: 0 15px;
-
 }
 
-/* ++ Evento clic de CSS */
 
-#click-event {
-    /* display: none; */
-}
-
-#click-event ~ #a {
-    display: block;
-}
 /* *texto provisorio */
 
 /*  */

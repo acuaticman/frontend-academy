@@ -5,7 +5,8 @@
         <meta charset="UTF-8" />
         <meta http-equiv="X-UA-Compatible" content="IE=edge" />
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-        <script src="https://kit.fontawesome.com/c8f9420bc7.js" crossorigin="anonymous"></script>
+        <script src="https://kit.fontawesome.com/c8f9420bc7.js"
+            crossorigin="anonymous"></script>
         <link rel="stylesheet" href="/styles/styleprovis.css" />
         <title>Curriculum</title>
     </head>
@@ -25,14 +26,14 @@
             </div>
             <div class="titulo">
                 <h1>
-                    <span class="name">Jorge Ernesto</span>
-                    <span class="surname">Catanzaro</span>
+                    <span class="name">Byron Adams</span>
+                    <span class="surname">Peterson</span>
                 </h1>
             </div>
         </header>
         <main class="principal">
             <div class="note" id="a">
-                <label for="click-event">X</label>
+                <label for="click-event" class="cerrar">X</label>
                 <h2>Pasatiempos</h2>
             </div>
             <div class="note" id="b">
@@ -50,9 +51,10 @@
             <div class="note" id="f">
                 <h2>Contacto</h2>
             </div>
-            <div class="ini" id="i">                
+            <div class="ini" id="i">
                 <h2>Bienvenidos</h2>
-                <p>Sientanse en la libertad de explorar todo mi sitio. Aquí encontrarán todo sobre mi:</p>
+                <p>Sientanse en la libertad de explorar todo mi sitio. Aquí
+                    encontrarán todo sobre mi:</p>
                 <ul>
                     <li class="edu">Mi educación</li>
                     <li class="exp">Mi experiencia</li>
@@ -61,39 +63,56 @@
                     <li class="likes">Y por que no, mis gustos y pasatiempos</li>
                     <li class="anec">Y algunas anécdotas de mi vida</li>
                 </ul>
-                <p>y sin entretenerlos más... Los invito a recorrer esta, mi <span class="life"> Vida  </span></p>
+                <p>y sin entretenerlos más... Los invito a recorrer esta, mi
+                    <span class="life"> Vida </span></p>
                 <div class="links">
-                    <input name="click1" type="checkbox" id="click1"/>
-                    <label for="click1" title="abrir" class="btn-abrir">
-                        <i class="fas fa-trophy" name="click1"></i>
-                    </label>
-                    <input name="click2" type="checkbox" id="click2"/>
-                    <label for="click2" title="abrir" class="btn-abrir">
-                        <i class="fas fa-user-graduate" name="click2"></i>
-                    </label>
-                    <input name="click3" type="checkbox" id="click3"/>
-                    <label for="click3" title="abrir" class="btn-abrir">
-                        <i class="fas fa-handshake" name="click3"></i>
-                    </label>
-                    <input name="click4" type="checkbox" id="click4"/>
-                    <label for="click4" title="abrir" class="btn-abrir">
-                        <i class="fas fa-briefcase" name="click4"></i>
-                    </label>
-                    <input name="click5" type="checkbox" id="click5"/>
-                    <label for="click5" title="abrir" class="btn-abrir">
-                        <i class="fas fa-sliders-h" name="click5"></i>
-                    </label>
-                    <input name="click6" type="checkbox" id="click6"/>
-                    <label for="click6" title="abrir" class="btn-abrir">
-                        <i class="fas fa-paper-plane" name="click6"></i>
-                    </label>
+                    <button class="btn-imag" onclick="showA()"><i class="fas fa-trophy" name="click1"></i></button>
+                    <button class="btn-imag" onclick="showB()"><i class="fas fa-user-graduate" name="click2"></i></button>
+                    <button class="btn-imag" onclick="showC()"><i class="fas fa-handshake" name="click3"></i></button>
+                    <button class="btn-imag" onclick="showD()"><i class="fas fa-briefcase" name="click4"></i></button>
+                    <button class="btn-imag" onclick="showE()"><i class="fas fa-sliders-h" name="click5"></i></button>
+                    <button class="btn-imag" onclick="showF()"><i class="fas fa-paper-plane" name="click6"></i></button>
                 </div>
             </div>
+            <footer>
+                <div class="footer"><h2>Este es el footer</h2></div>
+            </footer>
         </main>
     </body>
-
+    
     <script src="/scripts/script.js"></script>
-</html>
+    </html>
+    
+    
+    <!-- 
+        <label>
+        <input type="checkbox" id="click1" class="event" value="click1" />
+                        <i class="fas fa-trophy" name="click1"></i>
+                    </label>
 
+                    <label>
+                        <input type="checkbox" id="click2" class="event" value="click2"/>
 
-<!--  -->
+                        <i class="fas fa-user-graduate" name="click2"></i>
+                    </label>
+
+                    <label>
+                        <input type="checkbox" id="click3" class="event" value="click3"/>                    
+                        <i class="fas fa-handshake" name="click3"></i>
+                    </label>
+
+                    <label>
+                    <input type="checkbox" id="click4" class="event" value="click4"/>                    
+                        <i class="fas fa-briefcase" name="click4"></i>
+                    </label>
+
+                    <label for="click5">
+                    <input type="checkbox" id="click5" class="event" value="click5"/>                    
+                        <i class="fas fa-sliders-h" name="click5"></i>
+                    </label>
+
+                    <label for="click6">
+                    <input type="checkbox" id="click6" class="event" value="click6"/>                    
+                        <i class="fas fa-paper-plane" name="click6"></i>
+                    </label>
+ -->
