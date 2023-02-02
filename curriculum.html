@@ -5,6 +5,7 @@
         <meta charset="UTF-8" />
         <meta http-equiv="X-UA-Compatible" content="IE=edge" />
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <script src="https://kit.fontawesome.com/c8f9420bc7.js" crossorigin="anonymous"></script>
         <link rel="stylesheet" href="/styles/styleprovis.css" />
         <title>Curriculum</title>
     </head>
@@ -15,17 +16,24 @@
                 <img src="/assets/images/fotoUser.png" alt="foto del titular">
             </div>
             <div class="botonera">
-                <button class="btn" onclick="showA()">Presentación</button>
+                <button class="btn" onclick="showA()">Pasatiempos</button>
                 <button class="btn" onclick="showB()">Educación</button>
                 <button class="btn" onclick="showC()">Referencias</button>
                 <button class="btn" onclick="showD()">Experiencia</button>
                 <button class="btn" onclick="showE()">Habilidades</button>
                 <button class="btn" onclick="showF()">Contacto</button>
             </div>
+            <div class="titulo">
+                <h1>
+                    <span class="name">Jorge Ernesto</span>
+                    <span class="surname">Catanzaro</span>
+                </h1>
+            </div>
         </header>
         <main class="principal">
             <div class="note" id="a">
-                <h2>Presentación</h2>
+                <label for="click-event">X</label>
+                <h2>Pasatiempos</h2>
             </div>
             <div class="note" id="b">
                 <h2>Mi Educación</h2>
@@ -42,11 +50,50 @@
             <div class="note" id="f">
                 <h2>Contacto</h2>
             </div>
-            <div class="ini" id="i">
+            <div class="ini" id="i">                
                 <h2>Bienvenidos</h2>
+                <p>Sientanse en la libertad de explorar todo mi sitio. Aquí encontrarán todo sobre mi:</p>
+                <ul>
+                    <li class="edu">Mi educación</li>
+                    <li class="exp">Mi experiencia</li>
+                    <li class="skills">Mis habilidades</li>
+                    <li class="ref">Mis referencias</li>
+                    <li class="likes">Y por que no, mis gustos y pasatiempos</li>
+                    <li class="anec">Y algunas anécdotas de mi vida</li>
+                </ul>
+                <p>y sin entretenerlos más... Los invito a recorrer esta, mi <span class="life"> Vida  </span></p>
+                <div class="links">
+                    <input name="click1" type="checkbox" id="click1"/>
+                    <label for="click1" title="abrir" class="btn-abrir">
+                        <i class="fas fa-trophy" name="click1"></i>
+                    </label>
+                    <input name="click2" type="checkbox" id="click2"/>
+                    <label for="click2" title="abrir" class="btn-abrir">
+                        <i class="fas fa-user-graduate" name="click2"></i>
+                    </label>
+                    <input name="click3" type="checkbox" id="click3"/>
+                    <label for="click3" title="abrir" class="btn-abrir">
+                        <i class="fas fa-handshake" name="click3"></i>
+                    </label>
+                    <input name="click4" type="checkbox" id="click4"/>
+                    <label for="click4" title="abrir" class="btn-abrir">
+                        <i class="fas fa-briefcase" name="click4"></i>
+                    </label>
+                    <input name="click5" type="checkbox" id="click5"/>
+                    <label for="click5" title="abrir" class="btn-abrir">
+                        <i class="fas fa-sliders-h" name="click5"></i>
+                    </label>
+                    <input name="click6" type="checkbox" id="click6"/>
+                    <label for="click6" title="abrir" class="btn-abrir">
+                        <i class="fas fa-paper-plane" name="click6"></i>
+                    </label>
+                </div>
             </div>
         </main>
     </body>
 
     <script src="/scripts/script.js"></script>
 </html>
+
+
+<!--  -->

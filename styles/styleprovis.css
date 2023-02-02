@@ -10,9 +10,11 @@
 /* ++ font-family: 'Ubuntu', sans-serif; */
 /* ++ font-family: 'Cherry Cream Soda', cursive; */
 /* ++ font-family: 'Stick No Bills', sans-serif; */
-/* ++ font-family: 'Nova Mono', monospace; */
+/* ++ font-family: 'Ubuntu Mono', monospace; */
 
-@import url('https://fonts.googleapis.com/css2?family=Cherry+Cream+Soda&family=Stick+No+Bills:wght@200;300;400;500;600;700;800&family=Ubuntu:ital,wght@0,300;0,400;0,500;0,700;1,300;1,400;1,500;1,700&family=Nova+Mono:wght@200;300;400;500;600;700;800&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Cherry+Cream+Soda&family=Stick+No+Bills:wght@200;300;400;500;600;700;800&family=Ubuntu:ital,wght@0,300;0,400;0,500;0,700;1,300;1,400;1,500;1,700&family=Ubuntu+Mono:ital,wght@0,400;0,700;1,400;1,700&display=swap');
+
+
 
 * {
     margin: 0;
@@ -45,7 +47,7 @@ body {
 }
 
 .head {
-    background: rgb(0, 0, 0);
+    background: #333;
     display: flex;
     align-items: center;
     justify-content: space-between;
@@ -83,6 +85,41 @@ img {
         inset 13px 13px 25px rgb(211, 193, 193);
 }
 
+.titulo {
+    position: absolute;
+    top: 20px;
+    left: 155px;
+    display: flex;
+    color: white;
+    padding: 10px 30px;
+    border: 3px solid #111;
+    border-radius: 20px;
+    background: #353535;
+    box-shadow: 3px 3px 15px rgba(250, 248, 248, 0.438),
+        inset 3px 3px 3px rgba(255, 255, 255, 0.527),
+        -1px -1px 15px rgba(255, 255, 255, .75),
+        inset -2px -2px 12px rgba(0, 0, 0, 0.75);
+}
+
+.name {
+    font-size: 1.5em;
+    padding-right: 5px;
+    text-shadow: 0 1px 0 #ffffff,
+        3px 2px 1px rgba(255, 255, 255, 0.726),
+        10px 10px 25px #03e9f4,
+        -10px -10px 25px #03e9f4;
+}
+
+.surname {
+    font-size: 2.3em;
+    padding-left: 5px;
+    text-shadow: 0 1px 0 #ffffff,
+        3px 2px 1px rgba(255, 255, 255, 0.726),
+        10px 10px 25px #03e9f4,
+        -10px -10px 25px #03e9f4;
+    letter-spacing: 2px;
+}
+
 .botonera {
     /* border: 1px solid white; */
     position: relative;
@@ -108,11 +145,20 @@ img {
     border-radius: 10px;
     font-size: .8em;
     font-weight: 800;
+    color: #03e9f4;
+    background: #200274;
+    transition: all .2s ease-in;
 }
 
 .btn:hover {
-    transform: scale(1.4);
+    transform: scale(1.2);
     font-size: 0.9em;
+    color: #200274;
+    background: #03e9f4;
+    box-shadow: 0 0 5px #03e9f4,
+        0 0 25px #03e9f4,
+        0 0 50px #03e9f4,
+        0 0 200px #03e9f4;
     z-index: 10;
 }
 
@@ -134,7 +180,8 @@ img {
     width: 98vw;
     max-width: 800px;
     height: 80vh;
-    background-color: aquamarine;
+    background-color: rgb(68, 80, 119);
+    color: #fff;
 }
 
 .note {
@@ -142,13 +189,59 @@ img {
     position: relative;
     width: 98vw;
     max-width: 800px;
-    height: 300px;
-    background-color: aquamarine;
+    height: 80vh;
+    background-color: rgb(68, 80, 119);
+    color: #fff;
 }
+
+
+/* ++ Estilos generales */
 
 h2 {
     text-align: center;
     font-family: 'Cherry Cream Soda', cursive;
-    font-size: 2em;
+    font-size: 2.5em;
     font-weight: 800;
+    margin: 10px 0;
 }
+
+
+p {
+    margin: 20px 20px;
+    font-size: 1.1rem;
+}
+
+ul {
+    list-style: none;
+}
+
+li {
+    font-family: 'Ubuntu Mono', monospace;    
+    margin: 20px 0 20px 100px;
+}
+
+.links {
+    border: 1px solid red;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.fas{
+    font-size: 4em;
+    margin: 0 15px;
+
+}
+
+/* ++ Evento clic de CSS */
+
+#click-event {
+    /* display: none; */
+}
+
+#click-event ~ #a {
+    display: block;
+}
+/* *texto provisorio */
+
+/*  */
