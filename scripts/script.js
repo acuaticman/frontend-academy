@@ -5,13 +5,13 @@
 
 function showA () {
 
-  document.getElementById("a").style.display="block"
-  document.getElementById("b").style.display="none"
-  document.getElementById("c").style.display="none"
-  document.getElementById("d").style.display="none"
-  document.getElementById("e").style.display="none"
-  document.getElementById("f").style.display="none"
-  document.getElementById("i").style.display="none"
+    document.getElementById("a").style.display="block"
+    document.getElementById("b").style.display="none"
+    document.getElementById("c").style.display="none"
+    document.getElementById("d").style.display="none"
+    document.getElementById("e").style.display="none"
+    document.getElementById("f").style.display="none"
+    document.getElementById("i").style.display="none"
   }
   
   function showB () {
@@ -38,7 +38,7 @@ function showA () {
 
   function showD () {
 
-    document.getElementById("a").style.display="none"
+  document.getElementById("a").style.display="none"
   document.getElementById("b").style.display="none"
   document.getElementById("c").style.display="none"
   document.getElementById("d").style.display="block"
@@ -49,7 +49,7 @@ function showA () {
 
   function showE () {
 
-    document.getElementById("a").style.display="none"
+  document.getElementById("a").style.display="none"
   document.getElementById("b").style.display="none"
   document.getElementById("c").style.display="none"
   document.getElementById("d").style.display="none"
@@ -60,7 +60,7 @@ function showA () {
 
   function showF () {
 
-    document.getElementById("a").style.display="none"
+  document.getElementById("a").style.display="none"
   document.getElementById("b").style.display="none"
   document.getElementById("c").style.display="none"
   document.getElementById("d").style.display="none"
@@ -69,6 +69,15 @@ function showA () {
   document.getElementById("i").style.display="none"
     }
 
+  function hideA () {    
+    document.getElementById("a").style.display="none"
+    document.getElementById("b").style.display="none"
+    document.getElementById("c").style.display="none"
+    document.getElementById("d").style.display="none"
+    document.getElementById("e").style.display="none"
+    document.getElementById("f").style.display="none"
+    document.getElementById("i").style.display="block"
+  }
 
 //Metodo Nº 1
 /* 

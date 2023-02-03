@@ -187,6 +187,7 @@ img {
     0 0 50px #03e9f4,
     0 0 200px #03e9f4;
     background: #03e9f4;
+    border: 1px solid blue;
     color: #111;
     text-shadow: 3px 3px 5px #111;
 }
@@ -195,16 +196,92 @@ img {
 
 .btn-imag .fa-trophy:hover::after{
     content: "Pasatiempos";
-    border: 1px solid red;
     position: absolute;
-    top: 50px;
+    top: 65px;
     left: 0;
     display: flex;
     justify-content: center;
-    background: white;
+    color: #fff;
     width: 60px;
     height: 20px;
     font-size: .3em;
+    font-weight: 800;
+    text-shadow: 3px 3px 2px #111;
+}
+
+.btn-imag .fa-user-graduate:hover::after{
+    content: "Educación";
+    position: absolute;
+    top: 65px;
+    left: 0;
+    display: flex;
+    justify-content: center;
+    color: #fff;
+    width: 60px;
+    height: 20px;
+    font-size: .3em;
+    font-weight: 800;
+    text-shadow: 3px 3px 2px #111;
+}
+
+.btn-imag .fa-handshake:hover::after{
+    content: "Referencias";
+    position: absolute;
+    top: 65px;
+    left: 0;
+    display: flex;
+    justify-content: center;
+    color: #fff;
+    width: 60px;
+    height: 20px;
+    font-size: .3em;
+    font-weight: 800;
+    text-shadow: 3px 3px 2px #111;
+}
+
+.btn-imag .fa-briefcase:hover::after{
+    content: "Experiencia";
+    position: absolute;
+    top: 65px;
+    left: 0;
+    display: flex;
+    justify-content: center;
+    color: #fff;
+    width: 60px;
+    height: 20px;
+    font-size: .3em;
+    font-weight: 800;
+    text-shadow: 3px 3px 2px #111;
+}
+
+.btn-imag .fa-sliders-h:hover::after{
+    content: "Habilidades";
+    position: absolute;
+    top: 65px;
+    left: 0;
+    display: flex;
+    justify-content: center;
+    color: #fff;
+    width: 60px;
+    height: 20px;
+    font-size: .3em;
+    font-weight: 800;
+    text-shadow: 3px 3px 2px #111;
+}
+
+.btn-imag>.fa-paper-plane:hover::after{
+    content: "Contacto";
+    position: absolute;
+    top: 65px;
+    left: 0;
+    display: flex;
+    justify-content: center;
+    color: #fff;
+    width: 60px;
+    height: 20px;
+    font-size: .3em;
+    font-weight: 800;
+    text-shadow: 3px 3px 2px #111;
 }
 
 /* ++ fin botonera inferior */
@@ -221,15 +298,13 @@ img {
     z-index: -100;
 }
 
-
-
 .ini {
     display: block;
     position: relative;
     width: 98vw;
     max-width: 800px;
     height: 75vh;
-    background-color: rgb(64, 26, 87);
+    background-color: rgb(68, 80, 119);
     color: #fff;
 }
 
@@ -243,14 +318,49 @@ img {
     color: #fff;
 }
 
-.cerrar{
-    border: 1px solid red;
+.hide {
     position: absolute;
-    right: 10px;
+    top: 5px;
+    left: 10px;
     font-size: 2em;
     font-weight: 800;
+    width: 65px;
+    height: 65px;
+    padding: 1px;
+    border-radius: 10px;
+    background: linear-gradient(180deg, #282828, #202020);
+    box-shadow: inset -8px 0 8px rgba(0, 0, 0, 0.15),
+    inset 0 -8px 8px rgba(0, 0, 0, 0.25)
+    0 0 0 1px rgba(0,0,0,.75),
+    10px 20px 25px rgba(0, 0, 0, 0.4);
+    overflow: hidden;
 }
 
+.hide::before {
+    content: "";
+    position: absolute;
+    top: 3px;
+    left: 4px;
+    bottom: 14px;
+    right: 12px;
+    background: linear-gradient(90deg, #232323, #4a4a4a);
+    border-radius: 10px;
+    box-shadow: -10px -10px 10px rgba(255, 255, 255, .25),
+    10px 5px 10px rgba(0, 0, 0, 0.15);
+    border-left: 1px solid #0004;
+    border-bottom: 1px solid #0004;
+    border-top: #0009;
+}
+
+span.esc {
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding-bottom: 15px;
+    color: #fff;
+    font-style: normal;
+}
 
 /* ++ Estilos generales */
 
@@ -265,7 +375,6 @@ h2 {
 
 p {
     margin: 20px 20px;
-    font-size: 1.1rem;
 }
 
 ul {
@@ -279,7 +388,6 @@ li {
 }
 
 .links {
-    border: 1px solid red;
     display: flex;
     align-items: center;
     justify-content: center;

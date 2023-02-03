@@ -17,11 +17,11 @@
                 <img src="/assets/images/fotoUser.png" alt="foto del titular">
             </div>
             <div class="botonera">
-                <button class="btn" onclick="showA()">Pasatiempos</button>
-                <button class="btn" onclick="showB()">Educación</button>
-                <button class="btn" onclick="showC()">Referencias</button>
-                <button class="btn" onclick="showD()">Experiencia</button>
-                <button class="btn" onclick="showE()">Habilidades</button>
+                <button class="btn" onclick="showA()">Educación</button>
+                <button class="btn" onclick="showB()">Referencias</button>
+                <button class="btn" onclick="showC()">Experiencia</button>
+                <button class="btn" onclick="showD()">Habilidades</button>
+                <button class="btn" onclick="showE()">Pasatiempos</button>
                 <button class="btn" onclick="showF()">Contacto</button>
             </div>
             <div class="titulo">
@@ -33,22 +33,80 @@
         </header>
         <main class="principal">
             <div class="note" id="a">
-                <label for="click-event" class="cerrar">X</label>
-                <h2>Pasatiempos</h2>
-            </div>
-            <div class="note" id="b">
+                <button class="hide" onclick="hideA()"><span class="esc">Esc</span></button>
                 <h2>Mi Educación</h2>
+
+                <div class="study">
+                    <h3>Educación Primaria</h3>
+                </div>
+                <div class="texto">
+                    <h4>1965/1971</h4>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                        Curabitur urna nibh, gravida ac ipsum eu, vulputate
+                        pretium neque. Phasellus aliquet egestas ex, eget
+                        dapibus eros feugiat nec.</p>
+                    <h4>Publica Nacional <span>Ricardo Gutierrez</span></h4>
+                    <p>Neque porro quisquam est qui dolorem ipsum quia dolor sit
+                        amet, consectetur, adipisci velit</p>
+                    <h4>FINALIZADOS</h4>
+                    <p>Vivamus quis commodo leo, in cursus nulla. Nam ligula
+                        lectus, interdum ut volutpat in, dictum a felis.
+                        Curabitur imperdiet imperdiet felis, vel pellentesque.</p>
+                </div>
+
+                <div class="study">
+                    <h3>Educación Secundaria</h3>
+                </div>
+                <div class="texto">
+                    <h4>1972/1977</h4>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                        Curabitur urna nibh, gravida ac ipsum eu, vulputate
+                        pretium neque.</p>
+                    <h4>Publica Nacional <span>Ricardo Gutierrez</span></h4>
+                    <p>Neque porro quisquam est qui dolorem ipsum quia dolor sit
+                        amet, consectetur, adipisci velit</p>
+                    <h4>FINALIZADOS</h4>
+                    <p>Vivamus quis commodo leo, in cursus nulla. </p>
+                </div>
+
+                <div class="study">
+                    <h3>Educación Universitaria</h3>
+                </div>
+                <div class="texto">
+                    <h4>1978/1986</h4>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+                    <h4>Publica Nacional <span>Ricardo Gutierrez</span></h4>
+                    <p>Neque porro quisquam est qui dolorem ipsum quia dolor sit
+                        amet, consectetur, adipisci velit</p>
+                    <h4>TITULOS OBTENIDO</h4>
+                    <ul>
+                        <li>Ingeniero en sistemas</li>
+                        <li>Desarrollo de Software</li>
+                        <li>Desarrollo de Redes</li>
+                        <li>ingeneieria en Comunicaciones</li>
+                        <li>Tecnico Operador de Redes</li>
+                    </ul>
+                </div>
             </div>
-            <div class="note" id="c">
+
+            <div class="note" id="b">
+                <button class="hide" onclick="hideA()"><span class="esc">Esc</span></button>
                 <h2>Mis Referencias</h2>
             </div>
-            <div class="note" id="d">
+            <div class="note" id="c">
+                <button class="hide" onclick="hideA()"><span class="esc">Esc</span></button>
                 <h2>Mi Experiencia</h2>
             </div>
-            <div class="note" id="e">
+            <div class="note" id="d">
+                <button class="hide" onclick="hideA()"><span class="esc">Esc</span></button>
                 <h2>Mis Habilidades</h2>
             </div>
+            <div class="note" id="e">
+                <button class="hide" onclick="hideA()"><span class="esc">Esc</span></button>
+                <h2>Pasatiempos</h2>
+            </div>
             <div class="note" id="f">
+                <button class="hide" onclick="hideA()"><span class="esc">Esc</span></button>
                 <h2>Contacto</h2>
             </div>
             <div class="ini" id="i">
@@ -66,12 +124,18 @@
                 <p>y sin entretenerlos más... Los invito a recorrer esta, mi
                     <span class="life"> Vida </span></p>
                 <div class="links">
-                    <button class="btn-imag" onclick="showA()"><i class="fas fa-trophy" name="click1"></i></button>
-                    <button class="btn-imag" onclick="showB()"><i class="fas fa-user-graduate" name="click2"></i></button>
-                    <button class="btn-imag" onclick="showC()"><i class="fas fa-handshake" name="click3"></i></button>
-                    <button class="btn-imag" onclick="showD()"><i class="fas fa-briefcase" name="click4"></i></button>
-                    <button class="btn-imag" onclick="showE()"><i class="fas fa-sliders-h" name="click5"></i></button>
-                    <button class="btn-imag" onclick="showF()"><i class="fas fa-paper-plane" name="click6"></i></button>
+                    <button class="btn-imag" onclick="showA()"><i class="fas
+                            fa-user-graduate" name="click2"></i></button>
+                    <button class="btn-imag" onclick="showB()"><i class="fas
+                            fa-handshake" name="click3"></i></button>
+                    <button class="btn-imag" onclick="showC()"><i class="fas
+                            fa-briefcase" name="click4"></i></button>
+                    <button class="btn-imag" onclick="showD()"><i class="fas
+                            fa-sliders-h" name="click5"></i></button>
+                    <button class="btn-imag" onclick="showE()"><i class="fas
+                            fa-trophy" name="click1"></i></button>
+                    <button class="btn-imag" onclick="showF()"><i class="fas
+                            fa-paper-plane" name="click6"></i></button>
                 </div>
             </div>
             <footer>
@@ -79,12 +143,12 @@
             </footer>
         </main>
     </body>
-    
+
     <script src="/scripts/script.js"></script>
-    </html>
-    
-    
-    <!-- 
+</html>
+
+
+<!-- 
         <label>
         <input type="checkbox" id="click1" class="event" value="click1" />
                         <i class="fas fa-trophy" name="click1"></i>
