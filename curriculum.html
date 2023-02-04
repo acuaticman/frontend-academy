@@ -1,84 +1,69 @@
 <!DOCTYPE html>
 <html lang="es">
 
-    <head>
-        <meta charset="UTF-8" />
-        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-        <script src="https://kit.fontawesome.com/c8f9420bc7.js"
-            crossorigin="anonymous"></script>
-        <link rel="stylesheet" href="/styles/styleprovis.css" />
-        <title>Curriculum</title>
-    </head>
+<head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <script src="https://kit.fontawesome.com/c8f9420bc7.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="/styles/styleprovis.css" />
+    <title>Curriculum</title>
+</head>
 
-    <body>
-        <header class="head">
-            <div class="image">
-                <img src="/assets/images/fotoUser.png" alt="foto del titular">
-            </div>
-            <div class="botonera">
-                <button class="btn" onclick="showA()">Educación</button>
-                <button class="btn" onclick="showB()">Referencias</button>
-                <button class="btn" onclick="showC()">Experiencia</button>
-                <button class="btn" onclick="showD()">Habilidades</button>
-                <button class="btn" onclick="showE()">Pasatiempos</button>
-                <button class="btn" onclick="showF()">Contacto</button>
-            </div>
-            <div class="titulo">
-                <h1>
-                    <span class="name">Byron Adams</span>
-                    <span class="surname">Peterson</span>
-                </h1>
-            </div>
-        </header>
-        <main class="principal">
-            <div class="note" id="a">
-                <button class="hide" onclick="hideA()"><span class="esc">Esc</span></button>
-                <h2>Mi Educación</h2>
-
+<body>
+    <header class="head">
+        <div class="image">
+            <img src="/assets/images/fotoUser.png" alt="foto del titular">
+        </div>
+        <div class="botonera">
+            <button class="btn" onclick="showA()">Formación</button>
+            <button class="btn" onclick="showB()">Referencias</button>
+            <button class="btn" onclick="showC()">Experiencia</button>
+            <button class="btn" onclick="showD()">Habilidades</button>
+            <button class="btn" onclick="showE()">Pasatiempos</button>
+            <button class="btn" onclick="showF()">Contacto</button>
+        </div>
+        <div class="titulo">
+            <h1>
+                <span class="name">Byron Adams</span>
+                <span class="surname">Peterson</span>
+            </h1>
+        </div>
+    </header>
+    <main class="principal">
+        <div class="note" id="a">
+            <button class="hide" onclick="hideA()"><span class="esc">Esc</span></button>
+            <button class="next" onclick="showB()"><span class="com"><i
+                        class="fas fa-arrow-right"></i></i></span></button>
+            <h2>Formación Profesional</h2>
+            <div class="general">
+                <div class="linea"></div>
                 <div class="study">
-                    <h3>Educación Primaria</h3>
+                    <h5 class="edu">Educación Primaria</h5>
                 </div>
                 <div class="texto">
                     <h4>1965/1971</h4>
-                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-                        Curabitur urna nibh, gravida ac ipsum eu, vulputate
-                        pretium neque. Phasellus aliquet egestas ex, eget
-                        dapibus eros feugiat nec.</p>
-                    <h4>Publica Nacional <span>Ricardo Gutierrez</span></h4>
-                    <p>Neque porro quisquam est qui dolorem ipsum quia dolor sit
-                        amet, consectetur, adipisci velit</p>
+                    <h4>Escuela Pública Nacional <span>Ricardo Gutierrez</span></h4>
                     <h4>FINALIZADOS</h4>
-                    <p>Vivamus quis commodo leo, in cursus nulla. Nam ligula
-                        lectus, interdum ut volutpat in, dictum a felis.
-                        Curabitur imperdiet imperdiet felis, vel pellentesque.</p>
                 </div>
 
                 <div class="study">
-                    <h3>Educación Secundaria</h3>
+                    <h5 class="edu">Educación Secundaria</h5>
                 </div>
                 <div class="texto">
                     <h4>1972/1977</h4>
-                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-                        Curabitur urna nibh, gravida ac ipsum eu, vulputate
-                        pretium neque.</p>
-                    <h4>Publica Nacional <span>Ricardo Gutierrez</span></h4>
-                    <p>Neque porro quisquam est qui dolorem ipsum quia dolor sit
-                        amet, consectetur, adipisci velit</p>
-                    <h4>FINALIZADOS</h4>
-                    <p>Vivamus quis commodo leo, in cursus nulla. </p>
+                    <h4>Instituto Privado <span>Abraham Lincoln</span></h4>
+                    <h4>Titulo Obtenido</h4>
+                    <p>Perito Mercantil</p>
                 </div>
 
                 <div class="study">
-                    <h3>Educación Universitaria</h3>
+                    <h5 class="edu">Educación Universitaria</h5>
                 </div>
                 <div class="texto">
                     <h4>1978/1986</h4>
-                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
-                    <h4>Publica Nacional <span>Ricardo Gutierrez</span></h4>
-                    <p>Neque porro quisquam est qui dolorem ipsum quia dolor sit
-                        amet, consectetur, adipisci velit</p>
-                    <h4>TITULOS OBTENIDO</h4>
+                    <h4>Universidadde Buenos Aires<span>UBA facultad de Ingeniería</span></h4>
+                    <h4>TITULOS OBTENIDOS:</h4>
                     <ul>
                         <li>Ingeniero en sistemas</li>
                         <li>Desarrollo de Software</li>
@@ -88,63 +73,136 @@
                     </ul>
                 </div>
             </div>
-
-            <div class="note" id="b">
-                <button class="hide" onclick="hideA()"><span class="esc">Esc</span></button>
-                <h2>Mis Referencias</h2>
-            </div>
-            <div class="note" id="c">
-                <button class="hide" onclick="hideA()"><span class="esc">Esc</span></button>
-                <h2>Mi Experiencia</h2>
-            </div>
-            <div class="note" id="d">
-                <button class="hide" onclick="hideA()"><span class="esc">Esc</span></button>
-                <h2>Mis Habilidades</h2>
-            </div>
-            <div class="note" id="e">
-                <button class="hide" onclick="hideA()"><span class="esc">Esc</span></button>
-                <h2>Pasatiempos</h2>
-            </div>
-            <div class="note" id="f">
-                <button class="hide" onclick="hideA()"><span class="esc">Esc</span></button>
-                <h2>Contacto</h2>
-            </div>
-            <div class="ini" id="i">
-                <h2>Bienvenidos</h2>
-                <p>Sientanse en la libertad de explorar todo mi sitio. Aquí
-                    encontrarán todo sobre mi:</p>
-                <ul>
-                    <li class="edu">Mi educación</li>
-                    <li class="exp">Mi experiencia</li>
-                    <li class="skills">Mis habilidades</li>
-                    <li class="ref">Mis referencias</li>
-                    <li class="likes">Y por que no, mis gustos y pasatiempos</li>
-                    <li class="anec">Y algunas anécdotas de mi vida</li>
-                </ul>
-                <p>y sin entretenerlos más... Los invito a recorrer esta, mi
-                    <span class="life"> Vida </span></p>
-                <div class="links">
-                    <button class="btn-imag" onclick="showA()"><i class="fas
-                            fa-user-graduate" name="click2"></i></button>
-                    <button class="btn-imag" onclick="showB()"><i class="fas
-                            fa-handshake" name="click3"></i></button>
-                    <button class="btn-imag" onclick="showC()"><i class="fas
-                            fa-briefcase" name="click4"></i></button>
-                    <button class="btn-imag" onclick="showD()"><i class="fas
-                            fa-sliders-h" name="click5"></i></button>
-                    <button class="btn-imag" onclick="showE()"><i class="fas
-                            fa-trophy" name="click1"></i></button>
-                    <button class="btn-imag" onclick="showF()"><i class="fas
-                            fa-paper-plane" name="click6"></i></button>
+        </div>
+        <div class="note" id="b">
+            <button class="hide" onclick="hideA()"><span class="esc">Esc</span></button>
+            <button class="prev" onclick="showA()"><span class="fore"><i class="fas fa-arrow-left"></i></span></button>
+            <button class="next" onclick="showC()"><span class="com"><i
+                        class="fas fa-arrow-right"></i></i></span></button>
+            <h2>Referencias Laborales</h2>
+            <div class="referrer">
+                <h3 class="ref">Referencias de mis empleos anteriores</h3>
+                <div class="persona">
+                    <h4>María Soliman</h4>
+                    <p><i class="fas fa-building"></i>Empresa: World trade</p>
+                    <p><i class="fas fa-briefcase"></i>Gerente de RR.HH</p>
+                    <p><i class="fas fa-envelope-open"></i><a
+                            href="mailto:msolirrhh@trade.com?subject=Solicitar referencias sobre Byron A Peterson">msolirrhh@trade.com</a>
+                    </p>
+                    <p><i class="fas fa-phone-alt"></i>591160706699</p>
+                </div>
+                <div class="persona">
+                    <h4>Ricardo Carlos Carmona</h4>
+                    <p><i class="fas fa-building"></i>Transcontinental Air Lines</p>
+                    <p><i class="fas fa-briefcase"></i>Gerente de Desarrollo</p>
+                    <p><i class="fas fa-envelope-open"></i><a
+                            href="mailto:carmona@tal.com?subject=Solicitar referencia sobre Byron A Peterson">carmona@tal.com</a>
+                    </p>
+                    <p><i class="fas fa-phone-alt"></i>591132818654</p>
+                </div>
+                <div class="persona">
+                    <h4>Erik brandwit</h4>
+                    <p><i class="fas fa-building"></i>E&A Comunicaciones</p>
+                    <p><i class="fas fa-briefcase"></i>Gerente de Sistemas</p>
+                    <p><i class="fas fa-envelope-open"></i><a
+                            href="mailto:ebranwit@e&acom.com?subject=Solicitar referencias sobre Byron A. Peterson">ebranwit@e&acom.com</a>
+                    </p>
+                    <p><i class="fas fa-phone-alt"></i>591125253030</p>
                 </div>
             </div>
-            <footer>
-                <div class="footer"><h2>Este es el footer</h2></div>
-            </footer>
-        </main>
-    </body>
+        </div>
+        <div class="note" id="c">
+            <button class="hide" onclick="hideA()"><span class="esc">Esc</span></button>
+            <button class="prev" onclick="showB()"><span class="fore"><i class="fas fa-arrow-left"></i></span></button>
+            <button class="next" onclick="showD()"><span class="com"><i
+                        class="fas fa-arrow-right"></i></i></span></button>
+            <h2>Experiencia</h2>
+            <div class="exp">
+                <h3>Gerente de Desarrollo sistema contable</h3>
+                <p>1995/2002</p>
+                <p>Empresa: World Trade</p>
+                <p>Planeación, desarrollo, ejecución, puesta en servicio y mantenimiento del sistema contable de la
+                    empresa.</p>
+            </div>
+            <div class="exp">
+                <h3>Gerente de Sistemas y Redes</h3>
+                <p>2002/2012</p>
+                <p>Transcontinental Air Lines</p>
+                <p>Planeación, ejecución y puesta en servicio de la red interna y de los servicios asociados </p>
+            </div>
+            <div class="exp">
+                <h3>Gerente de Sistemas y Comunicaciones</h3>
+                <p>2012/2019</p>
+                <p>E&A Comunicaciones</p>
+                <p>Desarrollo y puesta en servicio de las redes LAN, WAN, MAN, VPN para servicio de comunicaciones telefonicas y de computació</p>
+                <p>Desarrollo ejecución y puesta en marcha de los servicores de comunicaciones empresariales de alta demanda</p>
+            </div>
+            <div class="exp">
+                <h3>Chief Executive Officer (CEO) </h3>
+                <p>2019 a la actualidad</p>
+                <p>Ecopetrol</p>
+                <p>Tareas en desarrollo: Expandir e Innovar la Diivisión Web de la empresa desarrollando estrategias de comunicación
+                    y liderazgo de los cuadros inferiores en contacto con los clientes y proveedores a traves del sistema On line</p>
+            </div>
+        </div>
+        <div class="note" id="d">
+            <button class="hide" onclick="hideA()"><span class="esc">Esc</span></button>
+            <button class="prev" onclick="showC()"><span class="fore"><i class="fas fa-arrow-left"></i></span></button>
+            <button class="next" onclick="showE()"><span class="com"><i
+                        class="fas fa-arrow-right"></i></i></span></button>
+            <h2>Habilidades</h2>
+        </div>
+        <div class="note" id="e">
+            <button class="hide" onclick="hideA()"><span class="esc">Esc</span></button>
+            <button class="prev" onclick="showD()"><span class="fore"><i class="fas fa-arrow-left"></i></span></button>
+            <button class="next" onclick="showF()"><span class="com"><i
+                        class="fas fa-arrow-right"></i></i></span></button>
+            <h2>Pasatiempos</h2>
+        </div>
+        <div class="note" id="f">
+            <button class="hide" onclick="hideA()"><span class="esc">Esc</span></button>
+            <button class="prev" onclick="showE()"><span class="fore"><i class="fas fa-arrow-left"></i></span></button>
+            <h2>Contacto</h2>
+        </div>
+        <div class="ini" id="i">
+            <h2>Bienvenidos</h2>
+            <p>Sientanse en la libertad de explorar todo mi sitio. Aquí
+                encontrarán todo sobre mi:</p>
+            <ul>
+                <li class="edu">Mi educación</li>
+                <li class="expr">Mi experiencia</li>
+                <li class="skills">Mis habilidades</li>
+                <li class="ref">Mis referencias</li>
+                <li class="likes">Y por que no, mis gustos y pasatiempos</li>
+                <li class="anec">Y algunas anécdotas de mi vida</li>
+            </ul>
+            <p>y sin entretenerlos más... Los invito a recorrer esta, mi
+                <span class="life"> Vida </span>
+            </p>
+            <div class="links">
+                <button class="btn-imag" onclick="showA()"><i class="fas
+                            fa-user-graduate" name="click2"></i></button>
+                <button class="btn-imag" onclick="showB()"><i class="fas
+                            fa-handshake" name="click3"></i></button>
+                <button class="btn-imag" onclick="showC()"><i class="fas
+                            fa-briefcase" name="click4"></i></button>
+                <button class="btn-imag" onclick="showD()"><i class="fas
+                            fa-sliders-h" name="click5"></i></button>
+                <button class="btn-imag" onclick="showE()"><i class="fas fa-skiing" name="click1"></i></button>
+                <button class="btn-imag" onclick="showF()"><i class="fas
+                            fa-paper-plane" name="click6"></i></button>
+            </div>
+        </div>
+        <footer>
+            <div class="footer">
+                <h2>Este es el footer</h2>
+            </div>
+        </footer>
+    </main>
+</body>
 
-    <script src="/scripts/script.js"></script>
+<script src="/scripts/script.js"></script>
+
 </html>
 
 
