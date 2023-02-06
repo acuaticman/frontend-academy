@@ -13,7 +13,7 @@
 <body>
     <header class="head">
         <div class="image">
-            <img src="/assets/images/fotoUser.png" alt="foto del titular">
+            <img class="imguser" src="/assets/images/fotoUser.png" alt="foto del titular">
         </div>
         <div class="botonera">
             <button class="btn" onclick="showA()">Formación</button>
@@ -134,15 +134,19 @@
                 <h3>Gerente de Sistemas y Comunicaciones</h3>
                 <p>2012/2019</p>
                 <p>E&A Comunicaciones</p>
-                <p>Desarrollo y puesta en servicio de las redes LAN, WAN, MAN, VPN para servicio de comunicaciones telefonicas y de computació</p>
-                <p>Desarrollo ejecución y puesta en marcha de los servicores de comunicaciones empresariales de alta demanda</p>
+                <p>Desarrollo y puesta en servicio de las redes LAN, WAN, MAN, VPN para servicio de comunicaciones
+                    telefonicas y de computació</p>
+                <p>Desarrollo ejecución y puesta en marcha de los servicores de comunicaciones empresariales de alta
+                    demanda</p>
             </div>
             <div class="exp">
                 <h3>Chief Executive Officer (CEO) </h3>
                 <p>2019 a la actualidad</p>
                 <p>Ecopetrol</p>
-                <p>Tareas en desarrollo: Expandir e Innovar la Diivisión Web de la empresa desarrollando estrategias de comunicación
-                    y liderazgo de los cuadros inferiores en contacto con los clientes y proveedores a traves del sistema On line</p>
+                <p>Tareas en desarrollo: Expandir e Innovar la Diivisión Web de la empresa desarrollando estrategias de
+                    comunicación
+                    y liderazgo de los cuadros inferiores en contacto con los clientes y proveedores a traves del
+                    sistema On line</p>
             </div>
         </div>
         <div class="note" id="d">
@@ -217,6 +221,67 @@
             <button class="next" onclick="showF()"><span class="com"><i
                         class="fas fa-arrow-right"></i></i></span></button>
             <h2>Pasatiempos</h2>
+            <div class="contenedor">
+                <div class="foto">
+                    <i class="fas fa-camera-retro"></i>
+                    <h3>fotografía</h3>
+                    <p>Soy fotografo aficionado, sobre todo a la fotografía de aves y estas son algunas de mis fotos</p>
+                </div>
+                <div class="swim">
+                    <i class="fas fa-swimmer"></i>
+                    <h3>Natación</h3>
+                    <p>Me encanta la natación</p>
+                </div>
+                <div class="snow">
+                    <i class="fas fa-snowboarding"></i>
+                    <h3>Snowboard</h3>
+                    Practico los deportes invernales, sobre todo el snowboarding
+                </div>
+                <div class="pilot">
+                    <i class="fas fa-helicopter"></i>
+                    <h3>Piloto de Helicoptero</h3>
+                    <p>Soy piloto de helicoptero con mas de 3.000 hs de vuelo</p>
+                </div>
+                <div class="chess">
+                    <i class="fas fa-chess"></i>
+                    <h3>Ajedrez</h3>
+                    <!-- <p>Practico el ajedrez desde muy corta edad y tuve la enorme satisfacción de haber obtenido un nada despreciable 7mo puesto en el <span>"Torneo de Candidatos"</span> de 1977disputado en la ciudad de Lucerna Suiza.</p> -->
+                </div>
+                <div class="fotos">
+                    <div class="slideshow">
+                        <div class="slide">
+                            <img class="gallery" src="/assets/images/image1-1.jpg" alt="">
+                        </div>
+                        <div class="slide">
+                            <img class="gallery" src="/assets/images/image2-1.jpg" alt="">
+                        </div>
+                        <div class="slide">
+                            <img class="gallery" src="/assets/images/image3-1.jpg" alt="">
+                        </div>
+                        <div class="slide">
+                            <img class="gallery" src="/assets/images/image4-1.jpg" alt="">
+                        </div>
+                        <div class="slide">
+                            <img class="gallery" src="/assets/images/image5-1.jpg" alt="">
+                        </div>
+                        <div class="slide">
+                            <img class="gallery" src="/assets/images/image6-1.jpg" alt="">
+                        </div>
+                        <div class="slide">
+                            <img class="gallery" src="/assets/images/image7-1.jpg" alt="">
+                        </div>
+                        <div class="slide">
+                            <img class="gallery" src="/assets/images/image8-1.jpg" alt="">
+                        </div>
+                        <div class="slide">
+                            <img class="gallery" src="/assets/images/image9-1.jpg" alt="">
+                        </div>                    
+                        <div class="slide">
+                            <img class="gallery" src="/assets/images/image10-1.jpg" alt="">
+                        </div>                    
+                    </div>
+                </div>
+            </div>
         </div>
         <div class="note" id="f">
             <button class="hide" onclick="hideA()"><span class="esc">Esc</span></button>
@@ -228,17 +293,19 @@
             <p>Sientanse en la libertad de explorar todo mi sitio. Aquí
                 encontrarán todo sobre mi:</p>
             <ul>
-                <li class="edu">Mi educación</li>
-                <li class="expr">Mi experiencia</li>
-                <li class="skills">Mis habilidades</li>
-                <li class="ref">Mis referencias</li>
-                <li class="likes">Y por que no, mis gustos y pasatiempos</li>
-                <li class="anec">Y algunas anécdotas de mi vida</li>
+                <li class="edu list"><a onclick="showA()">Mi Formación Académica<i class="fas fa-hand-point-up"></i></a>
+                </li>
+                <li class="ref  list"><a onclick="showB()">Mis Referencias<i class="fas fa-hand-point-up"></i></a></li>
+                <li class="expr list"><a onclick="showC()">Mi Experiencia<i class="fas fa-hand-point-up"></i></a></li>
+                <li class="skills list"><a onclick="showD()">Mis Habilidades<i class="fas fa-hand-point-up"></i></a>
+                </li>
+                <li class="likes list"><a onclick="showE()">Y mis gustos y pasatiempos<i
+                            class="fas fa-hand-point-up"></i></a></li>
             </ul>
             <p>y sin entretenerlos más... Los invito a recorrer esta, mi
                 <span class="life"> Vida </span>
             </p>
-            <div class="links">
+            <div class="btn-inf">
                 <button class="btn-imag" onclick="showA()"><i class="fas
                             fa-user-graduate" name="click2"></i></button>
                 <button class="btn-imag" onclick="showB()"><i class="fas
