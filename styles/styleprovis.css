@@ -222,7 +222,7 @@ li.list a:hover {
         0 0 200px #03e9f4;
     z-index: 10;
 }
-/* ++ Botonera inferior */
+/* ++ Inicio Botonera inferior del Div inicial */
 
 .btn-imag{
     border: 1px solid #000;
@@ -258,10 +258,10 @@ li.list a:hover {
         inset -2px -2px 12px rgba(0, 0, 0, 0.75);
 }
 
-/* * repetir para cada uno de los íconos segun su fa- */
+/* * repetir para cada uno de los íconos segun su class fa- */
 
 .btn-imag .fa-user-graduate:hover::after{
-    content: "Educación";
+    content: "Formación";
     position: absolute;
     top: 65px;
     left: 0;
@@ -356,7 +356,7 @@ li.list a:hover {
     text-shadow: 3px 3px 2px #111;
 }
 
-/* ++ fin botonera inferior */
+/* * fin botonera inferior */
 
 /* ++ contenedores principales */
 
@@ -400,7 +400,7 @@ li.list a:hover {
         inset -2px -2px 12px rgba(0, 0, 0, 0.75);
 }
 
-/* *Botonera inferior del Div Inicial */
+/* * Inicia Botonera inferior del Div Inicial */
 
 .btn-inf {
     display: flex;
@@ -416,7 +416,7 @@ li.list a:hover {
     margin: 0;
 }
 
-/* * fin Div inicial */
+/* * fin Botonera inferior del Div Inicial */
 /* ++ Inicio Div's: Formacion, Referencias, Experiencia, etc...  */
 
 .note {
@@ -596,7 +596,7 @@ span.fore {
 }
 
 /* * Fin Boton tecla flecha izquierda (Anterior) */
-/* ++ Pagina Formación Profesional y Estudios */
+/* ++Inicio Div Formación Profesional y Estudios */
 
 .study {
     position: relative;
@@ -654,8 +654,8 @@ span.fore {
     text-shadow: 10px 10px 10px #333;
 }
 
-/* * fin Pagina Formación Profesional y Estudios */
-/* ++ Página Referencias Laborales */
+/* * Fin Div Formación Profesional y Estudios */
+/* ++ Inicio Div Referencias Laborales */
 
 .persona{
     border: 1px solid rgb(4, 13, 134);
@@ -686,8 +686,8 @@ span.fore {
     font-size: .9em;
 }
 
-/* * fin pagina Referencias laborales */
-/* ++ Página de Experiencia Laboral*/
+/* * finDiv Referencias laborales */
+/* ++ Inicio Div Experiencia Laboral*/
 
 .exp {
     border: 2px solid rgb(14, 1, 70);
@@ -708,8 +708,8 @@ span.fore {
     font-size: .8em;
 }
 
-/* *fin pagina Experiencia Laboral */
-/* ++ pagina Habilidades */
+/* *fin Div Experiencia Laboral */
+/* ++ Inicio Div Habilidades */
 
 .container {
     display: flex;
@@ -902,44 +902,105 @@ span.fore {
     font-size: .5em;
 }
 
-/* * fin pagina Habilidades */
-/* ++ Inicio pagina Pasatiempos */
+/* * fin Div Habilidades */
+/* ++ Inicio Div Pasatiempos */
 
 .contenedor{
-    border: 1px solid red;
+    /* border: 1px solid rgb(9, 11, 179); */
     display: flex;
     align-items: flex-start;
     justify-content: center;
     width: auto;
     height: 60vh;
+    box-shadow: inset -8px 0 8px rgba(0, 0, 0, 0.15),
+    inset 0 -8px 8px rgba(0, 0, 0, 0.25)
+    0 0 0 1px rgba(0,0,0,.75),
+    10px 20px 25px rgba(0, 0, 0, 0.4);
 }
 
-.foto {
-    border: 1px solid blueviolet;
-    width: 20%;
-    height: 100%;
-}
-
-.contenedor .foto .fas {
+.contenedor .fas {
     display: block;
     padding: 2px;
-    margin: 1px 15px;
+    margin: 10px 15px;
     text-align: center;
     color: rgba(255, 196, 0, 0.575);
     background: #20428d;
     box-shadow: 2px 2px 2px rgba(102, 101, 101, 0.651),
-    3px 3px 3px rgba(0, 0, 0, 0.466),
-    5px 5px 5px rgba(0, 0, 0, 0.644),
-    7px 7px 7px rgba(0, 0, 0, 0.1),
+    5px 5px 5px rgba(0, 0, 0, 0.466),
+    10px 10px 10px rgba(0, 0, 0, 0.644),
+    15px 15px 15px rgba(0, 0, 0, 0.1),
     inset 2px 2px 1px #b8b7b7;
 }
 
+
+.contenedor h3 {
+    /* display: inline; */
+    margin: 20px 0;
+    font-size: .9em;
+    text-align: center;
+    color: #3ec0f3;
+    text-decoration: underline;
+}
+
+.contenedor p {
+    font-size: .8em;
+    margin: 0;
+    text-align: center;
+}
+
+.contenedor p span.bold {
+    font-size: 1.1em;
+    font-weight: 900;
+}
+
+.foto {
+    padding: 0 3px;
+    display: flex;
+    flex-direction: column;
+    min-width: 20%;
+    height: 100%;
+}
+
+.swim {
+    padding: 0 3px;
+    display: flex;
+    flex-direction: column;
+    min-width: 20%;
+    height: 100%;
+}
+
+.snowb {
+    padding: 0 3px;
+    display: flex;
+    flex-direction: column;
+    min-width: 20%;
+    height: 100%;
+}
+
+.pilot {
+    padding: 0 3px;
+    display: flex;
+    flex-direction: column;
+    min-width: 20%;
+    height: 100%;
+}
+
+.chess {
+    padding: 0 3px;
+    display: flex;
+    flex-direction: column;
+    min-width: 20%;
+    height: 100%;
+}
+
+/* ++ Inicia Galería de Imágenes */
+
 .fotos {
-    border: 1px solid yellowgreen;
+    /* border: 1px solid yellowgreen; */
     position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
+    top: 65%;
+    left: 35%;
+    /* transform: translate(-50%, -50%); */
     display: flex;
     justify-content: center;
     align-items: center;
@@ -1024,61 +1085,37 @@ span.fore {
         transform: rotateY(270deg);
     }    
 }
-.swim {
-    border: 1px solid orange;
-    min-width: 20%;
-    height: 100%;
+
+/* ++ Inicio Div Contacto */
+
+.contact {
+    background: url(/assets/images/anotador.jpg);
+    background-size: cover;
+    background-attachment: fixed;
+}
+
+.content .form .form-header {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.content .form .form-header .form-title {
+    font-size: 3em;
+    font-weight: lighter;
+    font-family: 'Ubuntu Mono', monospace;
+    color: #20428d;
 }
 
 
-.snow{
-    border: 1px solid white;
-    min-width: 20%;
-    height: 100%;
+.content .form .form-header .form-title span {
+    font-size: .5em;
+    color: #03e9f4;
 }
 
 
-
-.pilot {
-    border: 1px solid rgb(58, 4, 253);
-    min-width: 20%;
-    height: 100%;
-}
-
-
-
-.chess {
-    border: 1px solid rgb(182, 10, 153);
-    min-width: 20%;
-    height: 100%;
-}
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+/* *texto provisorio */
 
 /* 
 .fotos {
@@ -1125,22 +1162,3 @@ span.fore {
     object-fit: cover;
 }
  */
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-/* *texto provisorio */
-
-/*  */
