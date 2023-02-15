@@ -1089,9 +1089,25 @@ span.fore {
 /* ++ Inicio Div Contacto */
 
 .contact {
+    padding: 5px;
     background: url(/assets/images/anotador.jpg);
     background-size: cover;
     background-attachment: fixed;
+}
+
+.content {
+    padding: 5px;
+    display: flex;
+    width: 100%;
+}
+
+.content .form {
+    background: rgba(253, 253, 253, 0.10);
+    width: 65%;
+    max-width: 600px;
+    margin: 0 auto;
+    padding-bottom: 30px;
+    border-radius: 25px;    
 }
 
 .content .form .form-header {
@@ -1103,19 +1119,170 @@ span.fore {
 
 .content .form .form-header .form-title {
     font-size: 3em;
-    font-weight: lighter;
+    font-weight: 900;
     font-family: 'Ubuntu Mono', monospace;
-    color: #20428d;
+    color: #2e5cc0;
+    text-shadow: 2px 2px #200274;
 }
 
 
 .content .form .form-header .form-title span {
     font-size: .5em;
+    font-weight: lighter;
     color: #03e9f4;
 }
 
+.content .form .form-label {
+    position: relative;
+    left: -10%;
+    color: #c0d3fa;
+    font-weight: 600;
+    font-size: 1.3em;
+    margin-bottom: 5px;
+    text-shadow: 2px 2px #b69efa8f;
+}
 
+.content .form .form-input {
+    background: rgba(26, 29, 29, 0.555);
+    border: none;
+    width: 50%;
+    height: 28px;
+    margin-bottom: 10px;
+    outline: none;
+    border-bottom: 2px solid #03e9f4;
+    padding: 12px;
+    margin-bottom: 20px;
+    border-radius: 10px;
+    font-size: 16px;
+    color: #b3c9f8;
+    box-shadow: 1px 1px 5px rgba(250, 250, 250, .5),
+    inset 2px 2px 1px rgba(95, 145, 211, .5),
+    -1px -1px 5px rgba(255, 255, 255, .75),
+    inset -1px -1px 2px rgba(0, 0, 0, .75);
+    height: 36px;
+}
+
+.content .form .form-textarea {
+    background: rgba(26, 29, 29, 0.555);
+    border: none;
+    margin-bottom: 10px;
+    outline: none;
+    border-bottom: 2px solid #03e9f4;
+    padding: 12px;
+    margin-bottom: 20px;
+    border-radius: 10px;
+    font-size: 16px;
+    color: #b3c9f8;
+    box-shadow: 1px 1px 5px rgba(250, 250, 250, .5),
+    inset 2px 2px 1px rgba(95, 145, 211, .5),
+    -1px -1px 5px rgba(255, 255, 255, .75),
+    inset -1px -1px 2px rgba(0, 0, 0, .75);
+    width: 75%;
+    min-height: 50px;
+    max-height: 180px;
+    resize: vertical;
+}
+
+.contact .content .form .form-header .btn-submit {
+    width: 30%;
+    outline: none;
+    background: #03e9f4;
+    font-size: 1em;
+    border: none;
+    color: #20428d;
+    padding: 15px 0;
+    cursor: pointer;
+    border-radius: 10px;
+    box-shadow: 1px 1px 5px rgba(15, 2, 131, 0.671),
+    inset 2px 2px 1px rgba(95, 145, 211, .5),
+    1px 1px 1px rgba(255, 255, 255, .75),
+    inset -5px -5px 5px rgba(0, 0, 0, .75);
+    transition: all .2s ease;
+}
+
+.contact .content .form .form-header .btn-submit:hover {
+    background: #49aff3;
+    font-weight: 600;
+}
+
+.contact .content .form .form-header .btn-submit:active {
+    box-shadow: -1px -1px 5px rgba(15, 2, 131, 0.671),
+    inset -2px -2px 2px rgba(95, 145, 211, .5),
+    1px 1px 1px rgba(255, 255, 255, .75),
+    inset -1px -1px 1px rgba(0, 0, 0, .75); 
+}
+
+.contact .content .moreinfo {
+    width: 35%;
+    background: rgba(32, 32, 32, 0.5);
+    border-radius: 20px;
+}
+
+.contact .content .moreinfo .title {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+}
+
+.contact .content .moreinfo .title h3{
+    display: inline;
+    text-align: center;
+    margin: 0;
+    padding: 0 10px;
+    font-family: 'Cherry Cream Soda', cursive;
+    font-size: .9em;
+}
+
+.contact .content .moreinfo .title span {
+    margin: 0;
+    padding: 0;
+    font-family: 'Cherry Cream Soda', cursive;
+    font-size: 2rem;
+}
+
+.contact .content .moreinfo h3 {
+    display: flex;
+    justify-content: center;
+    font-family: 'Cherry Cream Soda', cursive;
+}
+
+.contact .content .moreinfo .adress{
+    display: flex;
+    flex-direction: row;
+}
+
+.contact .content .moreinfo i {
+    font-size: 1.5em;
+    margin-left: 8px;
+    margin-top: 20px;
+    color: #03e9f4;
+}
+
+.contact .content .moreinfo p {
+    font-size: .8em;
+    margin-left: 8px;
+    margin-top: 20px;
+    color: #03e9f4;
+}
+
+.contact .content .moreinfo .phone{
+    display: flex;
+    flex-direction: row;
+}
+
+.contact .content .moreinfo .mail {
+    display: flex;
+    flex-direction: row;
+}
+.contact .content .moreinfo .mail a,
+.contact .content .moreinfo .mail i,
+.contact .content .moreinfo .mail p {
+    cursor: pointer;
+    text-decoration: none;
+    color: #03e9f4;
+}
+ */
 
 /* *texto provisorio */
 
-/*  */

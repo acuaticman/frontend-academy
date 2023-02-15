@@ -1094,6 +1094,20 @@ span.fore {
     background-attachment: fixed;
 }
 
+.contact .content {
+    display: flex;
+    width: 100%;
+}
+
+.content .form {
+    background: rgba(253, 253, 253, 0.10);
+    width: 100%;
+    max-width: 600px;
+    margin: 0 auto;
+    padding-bottom: 30px;
+    border-radius: 25px;    
+}
+
 .content .form .form-header {
     display: flex;
     flex-direction: column;
@@ -1103,21 +1117,119 @@ span.fore {
 
 .content .form .form-header .form-title {
     font-size: 3em;
-    font-weight: lighter;
+    font-weight: 900;
     font-family: 'Ubuntu Mono', monospace;
-    color: #20428d;
+    color: #2e5cc0;
+    text-shadow: 2px 2px #200274;
 }
 
 
 .content .form .form-header .form-title span {
     font-size: .5em;
+    font-weight: lighter;
     color: #03e9f4;
 }
+
+.content .form .form-label {
+    position: relative;
+    left: -10%;
+    color: #c0d3fa;
+    font-weight: 600;
+    font-size: 1.3em;
+    margin-bottom: 5px;
+    text-shadow: 2px 2px #b69efa8f;
+}
+
+.content .form .form-input {
+    background: rgba(26, 29, 29, 0.555);
+    border: none;
+    width: 50%;
+    height: 28px;
+    margin-bottom: 10px;
+    outline: none;
+    border-bottom: 2px solid #03e9f4;
+    padding: 12px;
+    margin-bottom: 20px;
+    border-radius: 10px;
+    font-size: 16px;
+    color: #b3c9f8;
+    box-shadow: 1px 1px 5px rgba(250, 250, 250, .5),
+    inset 2px 2px 1px rgba(95, 145, 211, .5),
+    -1px -1px 5px rgba(255, 255, 255, .75),
+    inset -1px -1px 2px rgba(0, 0, 0, .75);
+    height: 36px;
+}
+
+.content .form .form-textarea {
+    background: rgba(26, 29, 29, 0.555);
+    border: none;
+    margin-bottom: 10px;
+    outline: none;
+    border-bottom: 2px solid #03e9f4;
+    padding: 12px;
+    margin-bottom: 20px;
+    border-radius: 10px;
+    font-size: 16px;
+    color: #b3c9f8;
+    box-shadow: 1px 1px 5px rgba(250, 250, 250, .5),
+    inset 2px 2px 1px rgba(95, 145, 211, .5),
+    -1px -1px 5px rgba(255, 255, 255, .75),
+    inset -1px -1px 2px rgba(0, 0, 0, .75);
+    width: 75%;
+    min-height: 50px;
+    max-height: 180px;
+    resize: vertical;
+}
+
+.contact .content .form .form-header .btn-submit {
+    width: 30%;
+    outline: none;
+    background: #03e9f4;
+    font-size: 1em;
+    border: none;
+    color: #20428d;
+    padding: 15px 0;
+    cursor: pointer;
+    border-radius: 10px;
+    box-shadow: 1px 1px 5px rgba(15, 2, 131, 0.671),
+    inset 2px 2px 1px rgba(95, 145, 211, .5),
+    1px 1px 1px rgba(255, 255, 255, .75),
+    inset -5px -5px 5px rgba(0, 0, 0, .75);
+    transition: all .2s ease;
+}
+
+.contact .content .form .form-header .btn-submit:hover {
+    background: #49aff3;
+    font-weight: 600;
+}
+
+.contact .content .form .form-header .btn-submit:active {
+    box-shadow: -1px -1px 5px rgba(15, 2, 131, 0.671),
+    inset -2px -2px 2px rgba(95, 145, 211, .5),
+    1px 1px 1px rgba(255, 255, 255, .75),
+    inset -1px -1px 1px rgba(0, 0, 0, .75); 
+}
+
+.contact .content .contacto {
+    border: 1px solid red;
+}
+
+
+
 
 
 /* *texto provisorio */
 
 /* 
+
+box-shadow: 1px 1px 5px rgba(250, 248, 248, 0.438),
+        inset 3px 3px 3px rgba(95, 145, 211, 0.527),
+        -1px -1px 15px rgba(255, 255, 255, .75),
+        inset -2px -2px 12px rgba(0, 0, 0, 0.75);
+
+
+
+
 .fotos {
     display: flex;
     justify-content: center;
