@@ -15,6 +15,7 @@
         <div class="image">
             <img class="imguser" src="/assets/images/fotoUser.png" alt="foto del titular">
         </div>
+        
         <div class="botonera">
             <button class="btn" onclick="showA()">Formación</button>
             <button class="btn" onclick="showB()">Referencias</button>
@@ -28,6 +29,25 @@
                 <span class="name">Byron Adams</span>
                 <span class="surname">Peterson</span>
             </h1>
+        </div>
+        <div class="boton-mobile">
+            <div class="boton-open">
+                <button id="boton-open" class="btn-mov" onclick="showmenu()"><i class="fas fa-bars"></i></button>
+            </div>
+            <div class="boton-close">
+                <button id="boton-close" class="btn-mov" onclick="hidemenu()"><i class="fas fa-times"></i></button>
+            </div>
+        </div>
+        <div id="menu-lateral" class="menu-lateral">
+            <p>Menu</p>
+            <div class="botonera-mob">
+                <button class="btn" onclick="showA()">Formación</button>
+                <button class="btn" onclick="showB()">Referencias</button>
+                <button class="btn" onclick="showC()">Experiencia</button>
+                <button class="btn" onclick="showD()">Habilidades</button>
+                <button class="btn" onclick="showE()">Pasatiempos</button>
+                <button class="btn" onclick="showF()">Contacto</button>
+            </div>
         </div>
     </header>
     <main class="principal">
@@ -342,8 +362,8 @@
                 <li class="likes list"><a onclick="showE()">Y mis gustos y pasatiempos<i
                             class="fas fa-hand-point-up"></i></a></li>
             </ul>
-            <p>y sin entretenerlos más... Los invito a recorrer esta, mi
-                <span class="life"> Vida </span>
+            <p>y sin entretenerlos más... Los invito a recorrer esta, 
+                <span class="life">Mi Vida </span>
             </p>
             <div class="btn-inf">
                 <button class="btn-imag" onclick="showA()"><i class="fas

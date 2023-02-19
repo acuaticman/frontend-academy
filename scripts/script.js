@@ -79,6 +79,18 @@ function showA () {
     document.getElementById("i").style.display="block"
   }
 
+  function showmenu () {
+    document.getElementById("menu-lateral").style.visibility="visible"
+    document.getElementById("boton-open").style.display="none"
+    document.getElementById("boton-close").style.display="block"
+  }
+
+  function hidemenu () {
+    document.getElementById("menu-lateral").style.visibility="hidden"
+    document.getElementById("boton-open").style.display="block"
+    document.getElementById("boton-close").style.display="none"
+  }
+
 //Metodo Nº 1
 /* 
 var clic = 1;

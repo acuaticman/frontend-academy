@@ -1,0 +1,25 @@
+
+/* ++ responsive media querys  */
+
+
+/* Dispositivos Muy Pequeños (telefonos y dispositivos de 660px o menos) */
+@media only screen and (max-width: 660px) {
+
+}
+/* Dispositivos Pequeños (tabletas verticales y teléfonos grandes desde 600px hasta 767px) */
+@media only screen and (min-width: 661px) {
+
+}
+/* Dispositivos medianos (tabletas horizontales desde 768px hasta 991px) */
+@media only screen and (min-width: 768px) {
+
+}
+/* Dispositivos grandes (computadoras portátiles y de escritorio desde 992px hasta 1199px) */
+@media only screen and (min-width: 992px) {
+
+}
+/* Dispositivos extra grandes (computadoras de escritorio grandes pantallas de TV etc. de 1200px y mas) */
+@media only screen and (min-width: 1200px) {
+
+}
+
