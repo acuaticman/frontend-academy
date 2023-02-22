@@ -371,7 +371,7 @@
 
     /* * fin botonera inferior */
 
-    /* ++ contenedor principales */
+    /* ++ contenedor principal */
 
     .principal {
         background: rgb(25, 20, 66);
@@ -608,9 +608,18 @@
     /* * Fin Boton tecla flecha izquierda (Anterior) */
     /* ++Inicio Div Formación Profesional y Estudios */
 
+
+    .general{
+        display: flex;
+        flex-direction: column;
+        width: 95vw;
+    }
+
+
     .study {
         position: relative;
         top: 5px;
+        width: 50%;
         border: 2px solid black;
         box-shadow: 10px 5px 10px rgba(0, 0, 0, 0.15);
         background: #032877;
@@ -1336,13 +1345,14 @@
     
         ul {
             list-style: none;
-            margin: 0 50px;
-            padding: 0 20px;
+            margin: 0 10px;
+            padding: 0 5px;
+            width: 100%;
         }
     
         li {
-            width: 80%;
-            margin: 20px auto;
+            width: 90%;
+            margin: 10px auto;
             cursor: pointer;
         }
     
@@ -1373,7 +1383,7 @@
         background: #010252;
         display: flex;
         align-items: center;
-        justify-content: space-around;
+        justify-content: space-between;
         height: 75px;
     }
 
@@ -1443,6 +1453,7 @@
         display: none;
         position: relative;
         top: 5px;
+        left: -100px;
         display: flex;
         align-items: center;
         justify-content: center;
@@ -1874,9 +1885,16 @@
 
     /* ++Inicio Div Formación Profesional y Estudios */
 
+    .general{
+        display: flex;
+        flex-direction: column;
+        width: 95vw;
+    }
+
     .study {
         position: relative;
         top: 5px;
+        width: 50%;
         border: 2px solid black;
         box-shadow: 10px 5px 10px rgba(0, 0, 0, 0.15);
         background: #032877;
@@ -1885,7 +1903,7 @@
     }
 
     .study h3 {
-        font-size: .7em;
+        font-size: .3em;
     }
 
     .texto {
@@ -1901,8 +1919,7 @@
     }
 
     .texto h4 {
-        font-size: .7em;
-        /* border: 2px solid black; */
+        font-size: .6em;
         display: inline-block;
         position: relative;
         left: -4.5%;
@@ -1912,13 +1929,13 @@
 
     }
 
-    .texto p {
-        font-size: .6em;
+    .texto span {
+        font-size: 1.2em;
     }
 
     .linea {
         position: absolute;
-        top: 90px;
+        top: 115px;
         left: 8%;
         border: 2px solid black;
         width: 1px;
@@ -1928,6 +1945,7 @@
     .texto ul li {
         font-size: .8em;
         text-shadow: 10px 10px 10px #333;
+        cursor: default;
     }
 
     /* * Fin Div Formación Profesional y Estudios */
