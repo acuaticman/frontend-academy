@@ -1,7 +1,4 @@
-
-
 // Métodos JS para mostrar ocultar div
-
 
 function showA () {
 
