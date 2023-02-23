@@ -1,7 +1,6 @@
 
 /* ++ responsive media querys  */
 
-
 /* Dispositivos Muy Pequeños (telefonos y dispositivos de 660px o menos) */
 @media only screen and (max-width: 660px) {
 
